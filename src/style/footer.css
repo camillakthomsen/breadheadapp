@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "FoundersGroteskCondensedSemibold";
+  src: url("../fonts/FoundersGroteskCondensed-Semibold.otf") format("opentype");
+  font-display: swap;
+}
+
+
+.siteFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between; /* venstre / midt / højre */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Hvis du vil have center HELT i midten uanset tekstlængde */
+.footerCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

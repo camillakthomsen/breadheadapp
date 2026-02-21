@@ -1,0 +1,172 @@
+/*
+  Based on "Pure CSS Hamburger Menu" by Erik Terwan (MIT License)
+  Adjusted for React + full-screen mobile menu + custom font only in menu
+*/
+
+/* Font bruges KUN i menuen */
+@font-face {
+  font-family: "ABCStefanSimple";
+  src: url("../fonts/ABCStefan-Simple.otf") format("opentype");
+  font-display: swap;
+}
+
+/* Toggle container */
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  z-index: 1000;
+  user-select: none;
+}
+
+/* Invisible checkbox (controls :checked) */
+#menuToggle input {
+  display: block;
+  width: 56px;   /* større klik-område */
+  height: 46px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1002;
+}
+
+/* The 3 hamburger lines */
+#menuToggle span {
+  display: block;
+  width: 44px;      /* større */
+  height: 6px;      /* tykkere */
+  margin-bottom: 8px;
+  position: relative;
+
+  background: #111; /* så den kan ses */
+  border-radius: 4px;
+
+  z-index: 1001;
+
+  transform-origin: 4px 0px;
+  transition: transform 0.5s ease, opacity 0.5s ease, background 0.2s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* Hover: burger skifter farve */
+#menuToggle:hover span {
+  background: #555;
+}
+
+/* Animate into X */
+#menuToggle input:checked ~ span {
+  transform: rotate(45deg) translate(2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Menu panel (desktop/tablet default) */
+#menu {
+  position: absolute;
+  width: 260px;
+  margin: -110px 0 0 -55px;
+  padding: 60px 45px 44px;
+  padding-top: 130px;
+  padding-left: 44px;
+
+  list-style: none;
+
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+
+  transform-origin: 0% 0%;
+  transform: translate(-110%, 0);
+  transition: transform 0.5s ease;
+
+  /* Font KUN her */
+  font-family: "ABCStefanSimple", sans-serif;
+}
+
+#menu li {
+  padding: 12px 0;
+}
+
+/* Links + hover */
+#menu a {
+  text-decoration: none;
+  color: #111;
+  font-size: 28px;
+  letter-spacing: 0.9px;
+  transition: color 0.2s ease;
+}
+
+#menu a:hover {
+  color: #555;
+}
+
+/* Slide in when checked */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+/* Social icons row (under menu links) */
+#menu .menuSocials {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#menu .menuSocials img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ===== MOBILE FULLSCREEN MENU ===== */
+@media (max-width: 768px) {
+  #menuToggle {
+    top: 44px;
+    left: 44px;
+  }
+
+  /* Fullscreen overlay menu */
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 110px 28px 28px;
+
+    transform: translateX(-100%);
+    transform-origin: 0% 0%;
+
+    box-shadow: none;
+  }
+
+  #menu li {
+    padding: 18px 0;
+  }
+
+  #menu a {
+    font-size: 28px;
+  }
+}

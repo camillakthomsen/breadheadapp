@@ -1,0 +1,14 @@
+/* Genbrug footers font-family navn */
+.homeTitle {
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+  font-size: 96px; /* ændr hvis du vil */
+  margin: 0;
+}
+
+/* Midt på siden */
+.homeCenter {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
