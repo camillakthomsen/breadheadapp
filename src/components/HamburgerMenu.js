@@ -24,30 +24,30 @@ export default function HamburgerMenu() {
 
         <ul id="menu">
           <li>
-            <Link to="/" onClick={closeMenu}>Home</Link>
+            <Link to="/" onClick={closeMenu}>BREADHEAD</Link>
           </li>
           <li>
-            <Link to="/events" onClick={closeMenu}>Events</Link>
+            <Link to="/homebookclub" onClick={closeMenu}>Bookclub</Link>
           </li>
           <li>
-            <Link to="/sourdough-course" onClick={closeMenu}>Sourdough course</Link>
+            <Link to="/homefirstfloor" onClick={closeMenu}>1st. floor</Link>
           </li>
           <li>
-            <Link to="/barista-course" onClick={closeMenu}>Barista course</Link>
+            <Link to="/homerunning" onClick={closeMenu}>Running</Link>
           </li>
           <li>
-            <Link to="/location" onClick={closeMenu}>Location</Link>
+            <Link to="/homesavoury" onClick={closeMenu}>Savoury</Link>
           </li>
 
           {/* Ikoner under teksten */}
           <li className="menuSocials">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/DavidBreadHead/?locale=da_DK" target="_blank" rel="noreferrer" aria-label="Facebook">
               <img src={facebookIcon} alt="Facebook" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/breadhead_aarhus/" target="_blank" rel="noreferrer" aria-label="Instagram">
               <img src={instagramIcon} alt="Instagram" />
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@breadhead_aarhus" target="_blank" rel="noreferrer" aria-label="TikTok">
               <img src={tiktokIcon} alt="TikTok" />
             </a>
           </li>

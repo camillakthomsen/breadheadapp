@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "FoundersGroteskRegular";
+  src: url("../fonts/FoundersGrotesk-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+.comingsoon {
+  font-family: "FoundersGroteskRegular", sans-serif;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

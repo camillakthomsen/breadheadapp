@@ -5,10 +5,17 @@
   margin: 0;
 }
 
-/* Midt på siden */
+.homeSubtitle {
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+  font-size: 50px; /* ændr hvis du vil */
+  margin: 0;
+  color: rgb(176, 185, 185);
+}
+
 .homeCenter {
   min-height: 100vh;
   display: flex;
+  flex-direction: column; /* <- den her er vigtig */
   align-items: center;
   justify-content: center;
 }
