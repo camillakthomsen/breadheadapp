@@ -19,3 +19,34 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.bakeryNav {
+  margin-top: 50px;
+  display: inline-flex;
+  gap: 20px;   
+  align-items: center;
+  font-family: inherit;  
+  font-size: 16px;   
+  letter-spacing: 0.08em; 
+}
+
+.bakeryNav a {
+  font: inherit; 
+  color: black;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.bakeryNav a:hover {
+  color: #c07a3a;         /* hover-farve (skift til din ønskede) */
+  opacity: 1;
+}
+
+/* Hvis du bruger NavLink og vil markere aktiv side */
+.bakeryNav a.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

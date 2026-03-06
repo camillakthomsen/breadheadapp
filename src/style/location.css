@@ -1,0 +1,104 @@
+/* ===== Layout ===== */
+.locWrap {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.locCard {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/* Lille linje i midten */
+.locCard:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Billede-lag ===== */
+.locImages {
+  position: absolute;
+  inset: 0;
+}
+
+.locImg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  transition: opacity 0.35s ease;
+}
+
+/* Base vises først */
+.locImgBase {
+  opacity: 1;
+  filter: grayscale(100%); /* sort/hvid */
+}
+
+/* Hover er skjult til start */
+.locImgHover {
+  opacity: 0;
+  filter: none; /* farve */
+}
+
+/* Hover: swap billeder */
+.locCard:hover .locImgBase {
+  opacity: 0;
+}
+
+.locCard:hover .locImgHover {
+  opacity: 1;
+}
+
+/* Overlay (gør tekst læselig) */
+.locCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  transition: background 0.35s ease;
+}
+
+/* lidt mere “pop” på hover */
+.locCard:hover::after {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Tekst ===== */
+.locText {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: inherit;
+  color: #fff;
+  padding: 18px 22px;
+}
+
+.locText h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.locText p {
+  margin: 6px 0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* ===== SÆT DINE BILLEDER HER ===== */
+/* CSS-filen ligger i src/style, og billederne i src/photo => ../photo/... */
+.leftBase  { background-image: url("../photo/jmorksgade.png"); }
+.leftHover { background-image: url("../photo/jmorksgade.png"); }
+
+.rightBase  { background-image: url("../photo/nymunkegade.png"); }
+.rightHover { background-image: url("../photo/nymunkegade.png"); }

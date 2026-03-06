@@ -13,6 +13,7 @@ import Events from "./components/bakery/Events";
 import HomeBookclub from "./components/bookclub/bookclubhome";
 import HomeFirstfloor from "./components/firstfloor/firstfloorhome";
 import HomeRunning from "./components/running/runninghome";
+import RunningPage from "./components/running/runningpage";
 import HomeSavoury from "./components/savoury/savouryhome";
 
 
@@ -30,9 +31,13 @@ function App() {
           <Route path="/barista-course" element={<BaristaCourse />} />
           <Route path="/location" element={<Location />} />
           <Route path="/events" element={<Events />} />
+
           <Route path="/homebookclub" element={<HomeBookclub/>} />
           <Route path="/homefirstfloor" element={<HomeFirstfloor/>} />
+
           <Route path="/homerunning" element={<HomeRunning/>} />
+          <Route path="/runningpage" element={<RunningPage/>} />
+
           <Route path="/homesavoury" element={<HomeSavoury/>} />
         </Routes>
       </main>

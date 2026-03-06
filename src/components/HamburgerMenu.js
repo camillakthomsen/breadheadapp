@@ -24,7 +24,7 @@ export default function HamburgerMenu() {
 
         <ul id="menu">
           <li>
-            <Link to="/" onClick={closeMenu}>BREADHEAD</Link>
+            <Link to="/homebakery" onClick={closeMenu}>BREADHEAD</Link>
           </li>
           <li>
             <Link to="/homebookclub" onClick={closeMenu}>Bookclub</Link>
