@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="siteFooter">
       <div className="footerInner">
-        <div className="footerLeft">AARHUS</div>
-        <div className="footerCenter">NY MUNKEGADE</div>
-        <div className="footerRight">2026</div>
+        <div className="footerLeft">EST: 2020</div>
+        <div className="footerCenter">CITY GROWN</div>
+        <div className="footerRight">AARHUS</div>
       </div>
     </footer>
   );

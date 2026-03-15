@@ -1,4 +1,9 @@
-/* Genbrug footers font-family navn */
+@font-face {
+  font-family: "FoundersGroteskCondensedSemibold";
+  src: url("../fonts/FoundersGroteskCondensed-Semibold.otf") format("opentype");
+  font-display: swap;
+}
+
 .homeTitle {
   font-family: "FoundersGroteskCondensedSemibold", sans-serif;
   font-size: 96px; /* ændr hvis du vil */
@@ -9,7 +14,7 @@
   font-family: "FoundersGroteskCondensedSemibold", sans-serif;
   font-size: 50px; /* ændr hvis du vil */
   margin: 0;
-  color: rgb(176, 185, 185);
+  color: rgb(5, 5, 5);
 }
 
 .homeCenter {
@@ -32,7 +37,7 @@
 }
 
 .bakeryNav a {
-  font: inherit; 
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
   color: black;
   text-decoration: none;
   opacity: 0.8;

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "BubbleTight";
+  src: url("../fonts/ABCStefan-BubbleTight.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FoundersSemibold";
+  src: url("../fonts/FoundersGroteskCondensed-Semibold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FoundersRegular";
+  src: url("../fonts/FoundersGrotesk-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+.infoPage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e9e9e9;
+  padding: 40px 20px 120px;
+  box-sizing: border-box;
+}
+
+.infoContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.infoH1 {
+  font-family: "FoundersSemibold", sans-serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+.infoHero {
+  font-family: "BubbleTight", sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+
+.infoSectionTitle {
+  font-family: "FoundersSemibold", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 50px 0 20px;
+}
+
+.infoText {
+  font-family: "FoundersRegular", sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.35rem);
+  line-height: 1.3;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 auto 24px;
+}
+
+.infoContactText {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.infoLink {
+  font-family: "FoundersSemibold", sans-serif;
+  color: red;
+  text-decoration: none;
+}
+
+.infoLink:hover {
+  text-decoration: underline;
+}
+
+.infoGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.infoGallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #d9d9d9;
+}
+
+@media (max-width: 768px) {
+  .infoGallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .infoPage {
+    padding: 30px 16px 100px;
+  }
+
+  .infoHero {
+    margin-bottom: 35px;
+  }
+
+  .infoSectionTitle {
+    margin-top: 35px;
+  }
+}

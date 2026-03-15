@@ -8,10 +8,9 @@ export default function bakeryhome() {
       <h2 className="homeSubtitle">BAKERY</h2>
 
       <nav className="bakeryNav">
-        <NavLink to="/location">Location</NavLink>
-        <NavLink to="/barista-course">Barista Course</NavLink>
-        <NavLink to="/sourdough-course">Sourdough Course</NavLink>
-        <NavLink to="/events">Events</NavLink>
+        <NavLink to="/bakeryinfo">INFO</NavLink>
+        <NavLink to="/location">LOCATION</NavLink>
+        <NavLink to="/events">EVENTS</NavLink>
       </nav>
     </div>
   );

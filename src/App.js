@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 import Home from "./components/Home";
 
 import HomeBakery from "./components/bakery/bakeryhome";
+import BakeryInfo from "./components/bakery/bakeryinfo";
 import SourdoughCourse from "./components/bakery/SourdoughCourse";
 import BaristaCourse from "./components/bakery/BaristaCourse";
 import Location from "./components/bakery/Location";
@@ -27,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/homebakery" element={<HomeBakery/>} />
+          <Route path="/bakeryinfo" element={<BakeryInfo/>} />
           <Route path="/sourdough-course" element={<SourdoughCourse />} />
           <Route path="/barista-course" element={<BaristaCourse />} />
           <Route path="/location" element={<Location />} />
@@ -39,6 +42,8 @@ function App() {
           <Route path="/runningpage" element={<RunningPage/>} />
 
           <Route path="/homesavoury" element={<HomeSavoury/>} />
+
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
 

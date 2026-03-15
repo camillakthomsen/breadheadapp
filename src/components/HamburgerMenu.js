@@ -24,7 +24,7 @@ export default function HamburgerMenu() {
 
         <ul id="menu">
           <li>
-            <Link to="/homebakery" onClick={closeMenu}>BREADHEAD</Link>
+            <Link to="/homebakery" onClick={closeMenu}>Bakery</Link>
           </li>
           <li>
             <Link to="/homebookclub" onClick={closeMenu}>Bookclub</Link>
@@ -35,13 +35,10 @@ export default function HamburgerMenu() {
           <li>
             <Link to="/homerunning" onClick={closeMenu}>Running</Link>
           </li>
-          <li>
-            <Link to="/homesavoury" onClick={closeMenu}>Savoury</Link>
-          </li>
 
           {/* Ikoner under teksten */}
           <li className="menuSocials">
-            <a href="https://www.facebook.com/DavidBreadHead/?locale=da_DK" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/Breadheadaarhus" target="_blank" rel="noreferrer" aria-label="Facebook">
               <img src={facebookIcon} alt="Facebook" />
             </a>
             <a href="https://www.instagram.com/breadhead_aarhus/" target="_blank" rel="noreferrer" aria-label="Instagram">
