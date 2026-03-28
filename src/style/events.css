@@ -1,134 +1,182 @@
 @font-face {
   font-family: "ABCStefan-BubbleTight";
   src: url("../fonts/ABCStefan-BubbleTight.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "FoundersGrotesk-Regular";
-  src: url("../fonts/FoundersGroteskCondensed-Semibold.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
+  font-family: "ABCStefan-Simple";
+  src: url("../fonts/ABCStefan-Simple.otf") format("opentype");
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "FoundersSemibold";
+  src: url("../fonts/FoundersGroteskCondensed-Semibold.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FoundersRegular";
+  src: url("../fonts/FoundersGrotesk-Regular.otf") format("opentype");
+  font-display: swap;
+}
 
 .eventsPage {
   min-height: 100vh;
+  background: #e9e9e9;
+  padding: 40px 20px 120px;
+  text-align: center;
 
-  /* luft til begge sider */
-  padding: 32px clamp(16px, 5vw, 48px);
-
-  /* alt andet end plakattitlen */
-  font-family: "FoundersGrotesk-Regular", sans-serif;
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
 }
 
 .eventsHeader {
-  margin: 0 0 22px;
-  text-align: center;
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  margin: 0 0 28px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 16px;
 }
 
-/* 3 pr række med “instagram-agtig” luft */
-.eventsGrid {
-  /* gør hele “feedet” smallere end skærmen og centrer */
+.eventsIntro {
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  text-transform: uppercase;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  line-height: 1.2;
+}
 
+/* instagram grid */
+.eventsGrid {
+  max-width: 900px;
+  margin: 0 auto 60px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
-/* Responsive: 2 pr række */
 @media (max-width: 1000px) {
-  .eventsGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .eventsGrid { grid-template-columns: repeat(2, 1fr); }
 }
-
-/* Responsive: 1 pr række */
 @media (max-width: 650px) {
-  .eventsGrid {
-    grid-template-columns: 1fr;
-  }
+  .eventsGrid { grid-template-columns: 1fr; }
 }
 
-/* ===== Card / “plakat” ===== */
-.eventCard {
+/* wrapper */
+.eventTileWrap {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
 
-  position: relative;
+/* the square tile */
+.eventTile {
+  --accent: #111;
+  --bg: #ddd;
 
-  /* firkant */
+  width: 100%;
   aspect-ratio: 1 / 1;
-
   background: var(--bg);
-
-  /* ingen border + ingen rounded */
-  border: none;
-  border-radius: 0;
-  overflow: hidden;
-
-  padding: 14px;
-
   color: var(--accent);
 
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-rows: auto 1fr auto;
+  padding: 14px;
+  box-sizing: border-box;
+
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
 }
 
-/* top/bund “meta” linjer */
-.eventMetaTop,
-.eventMetaBottom2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
+.eventTileTopSingle{
+  text-align: center;
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.95;
+  font-family: "FoundersRegular", sans-serif;
+  font-weight: 400;
 }
 
-.eventPrice {
-  text-align: right;
+
+
+.eventTileCenter {
+  display: grid;
+  place-items: center;
 }
 
-/* ===== Overskrift inde i event (bubble-font) ===== */
-.eventTitle {
-  margin: 0;
-  align-self: center;
-  text-align: center;
-
-  font-family: "ABCStefan-BubbleTight", sans-serif; /* kun denne */
-  font-size: 42px;
-  line-height: 0.95;
+.eventTileHero{
+  font-family: var(--heroFont, "ABCStefan-BubbleTight"), sans-serif;
+  font-size: 46px;
+  line-height: 0.92;
   text-transform: uppercase;
+  text-align: center;
 
-  color: transparent;
-  -webkit-text-stroke: 3px var(--accent);
+  color: var(--accent);       /* fyldt tekst */
+  -webkit-text-stroke: 0;     /* ingen outline */
+  font-weight: 400;
 }
 
-/* dato/tid i midten */
-.eventMetaBottom {
-  text-align: center;
+.eventTileBottom {
+  display: grid;
+  place-items: center;
+}
+
+.eventTileWhen {
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: 16px;
-}
-
-.eventTime {
-  margin-top: 4px;
   font-size: 13px;
+  line-height: 1.2;
 }
 
-.eventMetaBottom2 {
-  margin-top: 12px;
+.eventsIntro {
+  margin: 0 auto 55px;
 }
 
-/* valgfrit: subtil hover uden border */
-.eventCard:hover {
-  transform: translateY(-1px);
-  transition: transform 0.12s ease;
+/* meta under tile */
+.eventTileMeta {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
+}
+
+
+.eventTileLink {
+  display: inline-block;
+  margin-top: 10px;
+
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  color: #111;
+  text-decoration: none;
+}
+
+.eventTileLink:hover {
+  text-decoration: underline;
+}
+
+/* bottom text */
+.eventsSectionTitle {
+  font-family: "FoundersSemibold", sans-serif;
+  font-weight: 400;
+  margin: 40px 0 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.eventsText {
+  max-width: 900px;
+  margin: 0 auto 18px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 400;
 }

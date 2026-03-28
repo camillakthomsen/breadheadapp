@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../style/bakeryinfo.css";
+import "../../style/info.css";
 
 import info1 from "../../photo/bakery.webp";
 import info2 from "../../photo/bakery.webp";

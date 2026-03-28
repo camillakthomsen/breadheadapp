@@ -97,8 +97,8 @@
 
 /* ===== SÆT DINE BILLEDER HER ===== */
 /* CSS-filen ligger i src/style, og billederne i src/photo => ../photo/... */
-.leftBase  { background-image: url("../photo/jmorksgade.png"); }
-.leftHover { background-image: url("../photo/jmorksgade.png"); }
+.leftBase  { background-image: url("../photo/jmorksgade.JPG"); }
+.leftHover { background-image: url("../photo/jmorksgade.JPG"); }
 
 .rightBase  { background-image: url("../photo/nymunkegade.png"); }
 .rightHover { background-image: url("../photo/nymunkegade.png"); }

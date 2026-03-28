@@ -11,9 +11,10 @@ export default function Location() {
         </div>
 
         <div className="locText">
-          <h2>J. M. Mørks Gade 7, kl</h2>
-          <p>Mon-fri 8-18</p>
-          <p>Sat-sun 7-16</p>
+          <h2>J. M. Mørks Gade 7</h2>
+          <p>Mon-fri 7:15-18</p>
+          <p>Sat 8:30-18</p>
+          <p>Sun 8:30-16:30</p>
         </div>
       </div>
 
@@ -26,8 +27,9 @@ export default function Location() {
 
         <div className="locText">
           <h2>Ny Munkegade 4B</h2>
-          <p>Mon-fri 8-18</p>
-          <p>Sat-sun 7-16</p>
+          <p>Mon-fri 7:15-18</p>
+          <p>Sat 8:30-18</p>
+          <p>Sun 8:30-16:30</p>
         </div>
       </div>
     </div>

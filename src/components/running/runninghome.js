@@ -8,7 +8,8 @@ export default function runninghome() {
       <h2 className="homeSubtitle">RUNNING</h2>
 
       <nav className="bakeryNav">
-        <NavLink to="/runningpage">Check out the running page</NavLink>
+        <NavLink to="/runninginfo">INFO</NavLink>
+        <NavLink to="/events">EVENTS</NavLink>
       </nav>
     </div>
   );

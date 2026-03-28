@@ -13,9 +13,13 @@ import Location from "./components/bakery/Location";
 import Events from "./components/bakery/Events";
 
 import HomeBookclub from "./components/bookclub/bookclubhome";
+import BookclubInfo from "./components/bookclub/bookclubinfo";
+
 import HomeFirstfloor from "./components/firstfloor/firstfloorhome";
+import FirstfloorInfo from "./components/firstfloor/firstfloorinfo";
+
 import HomeRunning from "./components/running/runninghome";
-import RunningPage from "./components/running/runningpage";
+import RunningInfo from "./components/running/runninginfo";
 import HomeSavoury from "./components/savoury/savouryhome";
 
 
@@ -36,10 +40,13 @@ function App() {
           <Route path="/events" element={<Events />} />
 
           <Route path="/homebookclub" element={<HomeBookclub/>} />
+          <Route path="/bookclubinfo" element={<BookclubInfo/>} />
+
           <Route path="/homefirstfloor" element={<HomeFirstfloor/>} />
+          <Route path="/firstfloorinfo" element={<FirstfloorInfo/>} />
 
           <Route path="/homerunning" element={<HomeRunning/>} />
-          <Route path="/runningpage" element={<RunningPage/>} />
+          <Route path="/runninginfo" element={<RunningInfo/>} />
 
           <Route path="/homesavoury" element={<HomeSavoury/>} />
 

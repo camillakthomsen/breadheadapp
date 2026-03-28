@@ -5,6 +5,7 @@ import "../style/hamburgerMenu.css";
 import facebookIcon from "../photo/facebook.png";
 import instagramIcon from "../photo/instagram.png";
 import tiktokIcon from "../photo/tiktok.png";
+import linkedinIcon from "../photo/linkedin.png";
 
 export default function HamburgerMenu() {
   const checkboxRef = useRef(null);
@@ -46,6 +47,9 @@ export default function HamburgerMenu() {
             </a>
             <a href="https://www.tiktok.com/@breadhead_aarhus" target="_blank" rel="noreferrer" aria-label="TikTok">
               <img src={tiktokIcon} alt="TikTok" />
+            </a>
+            <a href="https://www.linkedin.com/company/breadheadbakery/?originalSubdomain=dk" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <img src={linkedinIcon} alt="LinkedIn"/>
             </a>
           </li>
         </ul>
