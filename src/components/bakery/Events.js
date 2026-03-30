@@ -5,8 +5,8 @@ export default function Events() {
   const events = [
     {
       title: "(BHRC)",
-      date: "TIRSDAG 20. JAN",
-      time: "KL. 17-18",
+      date: "Every Tuesday",
+      time: "KL. 6:45",
       topMid: "RUNNING",
       color: "#049CE7",
       bg: "#e3e9ef",
@@ -14,24 +14,34 @@ export default function Events() {
       heroFont: "simple", // ✅ ABCStefan-Simple
     },
     {
-      title: "BANKO OG BAJER",
-      date: "TIRSDAG 20. JAN",
-      time: "KL. 17-18",
-      topMid: "BREADHEAD",
-      color: "#FF2626",
-      bg: "#3D000F",
-      to: "/bakery/events",
-      heroFont: "bubble", // ✅ BubbleTight
+      title: "(BHRC)",
+      date: "Every Thursday",
+      time: "KL. 17:30",
+      topMid: "RUNNING",
+      color: "#049CE7",
+      bg: "#e3e9ef",
+      to: "/running/runninginfo",
+      heroFont: "simple", // ✅ ABCStefan-Simple
     },
     {
       title: "BARISTA COURSE",
-      date: "LØRDAG 25. JAN",
+      date: "Tuesday 21. APRIL",
       time: "KL. 10-13",
       topMid: "COFFEE",
       color: "#b67a3a",
       bg: "#301d0b",
       to: "/bakery/barista-course",
       heroFont: "h1", // ✅ FoundersSemibold (H1 look)
+    },
+    {
+      title: "BANKO OG BAJER",
+      date: "TIRSDAG 20. JAN",
+      time: "KL. 19",
+      topMid: "BREADHEAD",
+      color: "#FF2626",
+      bg: "#3D000F",
+      to: "/bakery/events",
+      heroFont: "bubble", // ✅ BubbleTight
     },
     {
       title: "SOURDOUGH COURSE",
