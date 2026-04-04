@@ -20,7 +20,9 @@ import FirstfloorInfo from "./components/firstfloor/firstfloorinfo";
 
 import HomeRunning from "./components/running/runninghome";
 import RunningInfo from "./components/running/runninginfo";
-import HomeSavoury from "./components/savoury/savouryhome";
+
+import JobsHome from "./components/job/jobhome";
+import JobsInfo from "./components/job/jobinfo";
 
 
 
@@ -48,7 +50,8 @@ function App() {
           <Route path="/homerunning" element={<HomeRunning/>} />
           <Route path="/runninginfo" element={<RunningInfo/>} />
 
-          <Route path="/homesavoury" element={<HomeSavoury/>} />
+          <Route path="/jobhome" element={<JobsHome/>} />
+          <Route path="/jobinfo" element={<JobsInfo/>} />
 
           <Route path="/contact" element={<Contact />} />
         </Routes>

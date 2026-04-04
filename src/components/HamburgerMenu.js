@@ -36,6 +36,9 @@ export default function HamburgerMenu() {
           <li>
             <Link to="/homerunning" onClick={closeMenu}>Running</Link>
           </li>
+          <li>
+            <Link to="/jobhome" onClick={closeMenu}>Jobs</Link>
+          </li>
 
           {/* Ikoner under teksten */}
           <li className="menuSocials">
