@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../style/info.css";
 
-import info1 from "../../photo/bakery.webp";
-import info2 from "../../photo/bakery.webp";
-import info3 from "../../photo/bakery.webp";
+import info1 from "../../photo/bp.jpg";
+import info2 from "../../photo/bp1.jpg";
+import info3 from "../../photo/bp2.jpg";
 
 function bakeryInfo() {
   return (

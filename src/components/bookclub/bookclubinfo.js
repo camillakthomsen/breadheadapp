@@ -8,13 +8,8 @@ export default function BookclubInfo() {
   return (
     <div className="infoPage bookInfoBg">
       <div className="infoContainer">
-        <h1 className="infoH1 bookInfoH1">
-          BREADHEAD
-          <br />
-          BOOK CLUB
-        </h1>
 
-        <h2 className="infoHero">ABOUT</h2>
+        <h2 className="infoHero">BOOK CLUB</h2>
 
         <p className="infoText bookInfoText">
           BREADHEAD BOOK CLUB IS BUILT ON THE SAME VALUES AS EVERYTHING WE DO –

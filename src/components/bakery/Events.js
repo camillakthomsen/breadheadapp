@@ -10,7 +10,7 @@ export default function Events() {
       topMid: "RUNNING",
       color: "#049CE7",
       bg: "#e3e9ef",
-      to: "/running/runninginfo",
+      to: "/runninginfo",
       heroFont: "simple", // ✅ ABCStefan-Simple
     },
     {
@@ -20,38 +20,38 @@ export default function Events() {
       topMid: "RUNNING",
       color: "#049CE7",
       bg: "#e3e9ef",
-      to: "/running/runninginfo",
+      to: "/runninginfo",
       heroFont: "simple", // ✅ ABCStefan-Simple
     },
     {
       title: "BARISTA COURSE",
-      date: "Tuesday 21. APRIL",
-      time: "KL. 10-13",
-      topMid: "COFFEE",
-      color: "#b67a3a",
-      bg: "#301d0b",
-      to: "/bakery/barista-course",
-      heroFont: "h1", // ✅ FoundersSemibold (H1 look)
+      date: "APRIL 21",
+      time: "",
+      topMid: "BREADHEAD",
+      color: "#ffffff",
+      bg: "#3D000F",
+      to: "/barista-course",
+      heroFont: "bubble", // ✅ FoundersSemibold (H1 look)
     },
     {
-      title: "BANKO OG BAJER",
-      date: "TIRSDAG 20. JAN",
-      time: "KL. 19",
+      title: "PILATES AND MATCHA",
+      date: "MAJ 16",
+      time: "",
       topMid: "BREADHEAD",
-      color: "#FF2626",
+      color: "#ffffff",
       bg: "#3D000F",
       to: "/bakery/events",
       heroFont: "bubble", // ✅ BubbleTight
     },
     {
       title: "SOURDOUGH COURSE",
-      date: "SØNDAG 26. JAN",
-      time: "KL. 11-14",
-      topMid: "BAKERY",
-      color: "#111",
-      bg: "#B6A6E7",
-      to: "/bakery/sourdough-course",
-      heroFont: "h1", // ✅ FoundersSemibold
+      date: "APRIL 27",
+      time: "",
+      topMid: "BREADHEAD",
+      color: "#ffffff",
+      bg: "#FF2626",
+      to: "/sourdough-course",
+      heroFont: "bubble", // ✅ FoundersSemibold
     },
   ];
 
@@ -63,6 +63,7 @@ export default function Events() {
 
   return (
   <div className="eventsPage">
+    <h1 className="eventsHeader">BREADHEAD BAKERY</h1>
     <h1 className="eventsHeader">EVENTS</h1>
 
     {/* TEXT BEFORE GRID */}

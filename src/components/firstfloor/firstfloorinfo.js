@@ -1,19 +1,14 @@
 import "../../style/info.css";
 
-import firstfloor1 from "../../photo/bakery.webp";
-import firstfloor2 from "../../photo/bakery.webp";
-import firstfloor3 from "../../photo/bakery.webp";
+import firstfloor1 from "../../photo/ff1.JPG";
+import firstfloor2 from "../../photo/ff2.JPG";
+import firstfloor3 from "../../photo/ff3.png";
 
 export default function FirstFloorInfo() {
   return (
     <div className="infoPage">
       <div className="infoContainer">
-        {/* Top (H1) */}
-        <h1 className="infoH1">
-          BREADHEAD
-          <br />
-          1ST. FLOOR
-        </h1>
+        <h1 className="infoHero">1ST. FLOOR</h1>
 
         {/* Section */}
         <h2 className="infoSectionTitle">BREADHEAD DINING EXPERIENCES</h2>

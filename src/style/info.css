@@ -62,7 +62,7 @@
 
 .infoText {
   font-family: "FoundersRegular", sans-serif;
-  font-size: clamp(1rem, 1.4vw, 1.35rem);
+  font-size: clamp(0.90rem, 1.15vw, 1.2rem);
   line-height: 1.3;
   text-transform: uppercase;
   max-width: 900px;
@@ -102,13 +102,13 @@
 /* ===== Bookclub page only ===== */
 .bookInfoBg {
   background: #b6a6e7; /* lilla */
-  color: #fff;         /* gør tekst hvid som på billedet */
+  color: #000000;         /* gør tekst hvid som på billedet */
 }
 
 .bookInfoBg .infoText,
 .bookInfoBg .infoSectionTitle,
 .bookInfoBg .infoH1 {
-  color: #fff;
+  color: #000000;
 }
 
 .infoHeroOutline {
@@ -139,13 +139,78 @@
 
 .runningInfoH2 {
   font-family: "Simple", sans-serif;
-  font-size: clamp(4rem, 10vw, 9rem);
+  font-size: clamp(14rem, 20vw, 9rem);
   color: #049CE7;
   line-height: 0.9;
   text-transform: uppercase;
   margin: 0 0 50px;
 }
 
+/* ===== Course layout blocks (used by BaristaCourse + SourdoughCourse) ===== */
+
+.courseIntro {
+  margin: 10px auto 40px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.courseIntroText {
+  font-family: "FoundersSemibold", sans-serif;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.courseIntroImg {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: #d9d9d9;
+}
+
+.courseBottom {
+  margin: 50px auto 40px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.courseInfoBox {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 26px;
+  text-transform: uppercase;
+  font-family: "FoundersSemibold", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.courseInfoBox p {
+  margin: 0;
+}
+
+.courseBottomImg {
+  width: 100%;
+  max-width: 1100px;
+  margin: 10px auto 0;
+  display: block;
+  object-fit: cover;
+  background: #d9d9d9;
+}
+
+/* mobile */
 @media (max-width: 768px) {
   .infoGallery {
     grid-template-columns: 1fr;
@@ -162,5 +227,18 @@
 
   .infoSectionTitle {
     margin-top: 35px;
+  }
+
+  .courseIntro,
+  .courseBottom {
+    grid-template-columns: 1fr;
+  }
+
+  .courseIntroImg {
+    aspect-ratio: 4 / 3;
+  }
+
+  .courseInfoBox {
+    min-height: auto;
   }
 }

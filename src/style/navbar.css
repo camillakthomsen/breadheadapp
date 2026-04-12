@@ -1,0 +1,49 @@
+.siteHeader{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.navRow{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBrand{
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+}
+
+.navDesktop{
+  display: flex;
+  gap: 18px;
+}
+
+.navDesktop a{
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+  font-size: 12px;
+  opacity: 0.85;
+}
+.navDesktop a:hover{ opacity: 1; }
+
+/* burger wrapper */
+.navMobileOnly{
+  display: none;
+}
+
+/* Mobil: skjul desktop links, vis burger */
+@media (max-width: 768px){
+  .navDesktop{ display: none; }
+  .navMobileOnly{ display: block; }
+}

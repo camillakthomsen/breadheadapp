@@ -28,10 +28,10 @@ export default function HamburgerMenu() {
             <Link to="/homebakery" onClick={closeMenu}>Bakery</Link>
           </li>
           <li>
-            <Link to="/homebookclub" onClick={closeMenu}>Bookclub</Link>
+            <Link to="/bookclubinfo" onClick={closeMenu}>Bookclub</Link>
           </li>
           <li>
-            <Link to="/homefirstfloor" onClick={closeMenu}>1st. floor</Link>
+            <Link to="/firstfloorinfo" onClick={closeMenu}>1st. floor</Link>
           </li>
           <li>
             <Link to="/homerunning" onClick={closeMenu}>Running</Link>
