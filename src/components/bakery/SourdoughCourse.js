@@ -7,6 +7,8 @@ export default function SourdoughCourse() {
   return (
     <div className="infoPage">
       <div className="infoContainer">
+        <br />
+        <br />
         {/* H1 (Bubble) */}
         <h1 className="infoHero">SOURDOUGH COURSE</h1>
 

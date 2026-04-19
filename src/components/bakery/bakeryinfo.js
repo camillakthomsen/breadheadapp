@@ -10,8 +10,8 @@ function bakeryInfo() {
   return (
     <section className="infoPage">
       <div className="infoContainer">
-        <h1 className="infoH1">BREADHEAD BAKERY</h1>
-
+        <br />
+        <br />
         <h2 className="infoHero">GOOD BREAD<br />GOOD CITY</h2>
 
         <p className="infoText">

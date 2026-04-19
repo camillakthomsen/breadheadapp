@@ -7,11 +7,8 @@ export default function RunningInfo() {
   return (
     <div className="infoPage runningInfoBg">
       <div className="infoContainer">
-        <h1 className="infoH1">
-          BREADHEAD
-          <br />
-          RUNNING CLUB
-        </h1>
+        <br />
+        <br />
 
         <h2 className="runningInfoH2">(BHRC)</h2>
 

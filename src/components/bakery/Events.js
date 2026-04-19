@@ -63,8 +63,7 @@ export default function Events() {
 
   return (
   <div className="eventsPage">
-    <h1 className="eventsHeader">BREADHEAD BAKERY</h1>
-    <h1 className="eventsHeader">EVENTS</h1>
+    <h1 className="infoHero">EVENTS</h1>
 
     {/* TEXT BEFORE GRID */}
     <h2 className="eventsIntro">

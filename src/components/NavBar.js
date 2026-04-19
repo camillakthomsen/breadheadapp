@@ -9,11 +9,19 @@ export default function NavBar() {
         <NavLink to="/" className="navBrand">BREADHEAD</NavLink>
 
         <nav className="navDesktop">
-          <NavLink to="/homebakery">BAKERY</NavLink>
-          <NavLink to="/homerunning">RUNNING</NavLink>
-          <NavLink to="/firstfloorinfo">1ST. FLOOR</NavLink>
-          <NavLink to="/bookclubinfo">BOOK CLUB</NavLink>
-          <NavLink to="/events">EVENTS</NavLink>
+
+          <NavLink to="/homebakery">Bakery</NavLink>
+          <NavLink to="/events">Events</NavLink>
+        <div className="dropdown"><span>Community</span>
+            <div className="dropdownMenu">
+                <NavLink to="/homerunning">Running</NavLink>
+                <NavLink to="/bookclubinfo">Book Club</NavLink>
+                <NavLink to="/firstfloorinfo">1st Floor</NavLink>
+            </div>
+        </div>
+
+          <NavLink to="/bakery2business">B2B</NavLink>
+          <NavLink to="/job">Job</NavLink>
         </nav>
 
         {/* din eksisterende burger */}

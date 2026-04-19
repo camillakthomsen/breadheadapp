@@ -1,49 +1,120 @@
 .siteHeader{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: transparent;
-  border-bottom: 1px solid rgba(0,0,0,0.12);
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+
+z-index:9999;
+
+background:transparent;
 }
+
+/* Fordel venstre og højre efter skærmens bredde */
+.navRow{
+width:100%;
+height:100%;
+
+padding:0 30px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* Logo */
+.navBrand{
+text-decoration:none;
+color:#111;
+
+text-transform:uppercase;
+font-family:"FoundersGroteskCondensedSemibold",sans-serif;
+font-size:2rem;
+
+flex-shrink:0;
+}
+
+/* Menu til højre */
+.navDesktop{
+display:flex;
+align-items:center;
+gap:22px;
+
+margin-left:auto;   /* skub menuen helt til højre */
+margin-right:60px;  /* ...men træk den 60px ind */
+}
+
+.navDesktop a,
+.dropdown span{
+display:flex;
+align-items:center;
+
+text-decoration:none;
+color:#111;
+
+text-transform:uppercase;
+font-family:"FoundersGroteskCondensedSemibold",sans-serif;
+font-size:12px;
+
+line-height:1;
+
+opacity:.85;
+transition:.3s;
+cursor:pointer;
+}
+
+.navDesktop a:hover,
+.dropdown span:hover{
+opacity:1;
+}
+
+/* Dropdown */
+.dropdown{
+position:relative;
+}
+
+.dropdownMenu{
+position:absolute;
+top:100%;
+left:0;
+
+display:none;
+flex-direction:column;
+
+padding-top:14px;
+min-width:170px;
+}
+
+.dropdown:hover .dropdownMenu{
+display:flex;
+}
+
+.dropdownMenu a{
+padding:6px 0;
+white-space:nowrap;
+}
+
+/* Mobile */
+.navMobileOnly{
+display:none;
+}
+
+@media (max-width:768px){
 
 .navRow{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navBrand{
-  text-decoration: none;
-  color: #111;
-  text-transform: uppercase;
-  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
+padding:0 20px;
 }
 
 .navDesktop{
-  display: flex;
-  gap: 18px;
+display:none;
 }
 
-.navDesktop a{
-  text-decoration: none;
-  color: #111;
-  text-transform: uppercase;
-  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
-  font-size: 12px;
-  opacity: 0.85;
-}
-.navDesktop a:hover{ opacity: 1; }
-
-/* burger wrapper */
 .navMobileOnly{
-  display: none;
+display:block;
 }
 
-/* Mobil: skjul desktop links, vis burger */
-@media (max-width: 768px){
-  .navDesktop{ display: none; }
-  .navMobileOnly{ display: block; }
+.navBrand{
+font-size:1.6rem;
+}
+
 }

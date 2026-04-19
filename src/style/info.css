@@ -46,7 +46,7 @@
 
 .infoHero {
   font-family: "BubbleTight", sans-serif;
-  font-size: clamp(4rem, 10vw, 9rem);
+  font-size: clamp(3rem, 8vw, 7rem);
   line-height: 0.9;
   text-transform: uppercase;
   margin: 0 0 50px;
@@ -62,7 +62,7 @@
 
 .infoText {
   font-family: "FoundersRegular", sans-serif;
-  font-size: clamp(0.90rem, 1.15vw, 1.2rem);
+  font-size:clamp(0.90rem,1.15vw,1.2rem);
   line-height: 1.3;
   text-transform: uppercase;
   max-width: 900px;
@@ -101,7 +101,7 @@
 
 /* ===== Bookclub page only ===== */
 .bookInfoBg {
-  background: #b6a6e7; /* lilla */
+  background: #d9d9d9; /* lilla */
   color: #000000;         /* gør tekst hvid som på billedet */
 }
 
@@ -158,10 +158,11 @@
 }
 
 .courseIntroText {
-  font-family: "FoundersSemibold", sans-serif;
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  line-height: 1.05;
+  font-family: "FoundersRegular", sans-serif;
+  font-size:clamp(0.90rem,1.15vw,1.2rem);
+  line-height: 1.3;
   text-transform: uppercase;
+  max-width: 900px;
   margin: 0;
 }
 
@@ -183,18 +184,24 @@
 }
 
 .courseInfoBox {
-  background: #0d0d0d;
-  color: #fff;
-  padding: 26px;
-  text-transform: uppercase;
-  font-family: "FoundersSemibold", sans-serif;
-  font-size: 12px;
-  line-height: 1.4;
-  min-height: 240px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  box-sizing: border-box;
+background:#0d0d0d;
+color:white;
+
+padding:26px;
+
+font-family:"FoundersRegular", sans-serif;
+font-size:clamp(0.90rem,1.15vw,1.2rem);
+line-height:1.3;
+
+text-transform:uppercase;
+
+min-height:240px;
+
+display:grid;
+place-items:center;
+text-align:center;
+
+box-sizing:border-box;
 }
 
 .courseInfoBox p {

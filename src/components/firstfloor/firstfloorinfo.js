@@ -8,6 +8,8 @@ export default function FirstFloorInfo() {
   return (
     <div className="infoPage">
       <div className="infoContainer">
+        <br />
+        <br />
         <h1 className="infoHero">1ST. FLOOR</h1>
 
         {/* Section */}
@@ -45,13 +47,6 @@ export default function FirstFloorInfo() {
         <p className="infoText">
           SOME EVENINGS YOU COME TO MEET NEW PEOPLE THROUGH A SHARED INTEREST IN
           FOOD, CRAFT AND THE CITY WE’RE PART OF. OTHER TIMES THE SPACE IS YOURS.
-        </p>
-
-        <h2 className="infoSectionTitle">BOOK FOR PRIVATE EVENTS</h2>
-        <p className="infoText">
-          BREADHEAD 1ST FLOOR CAN ALSO BE BOOKED FOR PRIVATE DINNERS,
-          CELEBRATIONS, TALKS OR GATHERINGS - A PLACE TO BRING YOUR OWN PEOPLE
-          TOGETHER IN CALM AND CONSIDERED SURROUNDINGS.
         </p>
 
         {/* Gallery */}

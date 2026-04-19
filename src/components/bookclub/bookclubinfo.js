@@ -8,7 +8,8 @@ export default function BookclubInfo() {
   return (
     <div className="infoPage bookInfoBg">
       <div className="infoContainer">
-
+        <br />
+        <br />
         <h2 className="infoHero">BOOK CLUB</h2>
 
         <p className="infoText bookInfoText">

@@ -7,6 +7,8 @@ export default function BaristaCourse() {
   return (
     <div className="infoPage">
       <div className="infoContainer">
+        <br />
+        <br />
         {/* H1 (Bubble) */}
         <h1 className="infoHero">BARISTA COURSE</h1>
 
