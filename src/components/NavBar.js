@@ -21,7 +21,7 @@ export default function NavBar() {
         </div>
 
           <NavLink to="/bakery2business">B2B</NavLink>
-          <NavLink to="/job">Job</NavLink>
+          <NavLink to="/jobinfo">Job</NavLink>
         </nav>
 
         {/* din eksisterende burger */}
