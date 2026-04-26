@@ -12,6 +12,7 @@ function bakeryInfo() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
         <h2 className="infoHero">GOOD BREAD<br />GOOD CITY</h2>
 
         <p className="infoText">

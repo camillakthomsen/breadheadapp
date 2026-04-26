@@ -7,7 +7,9 @@ height:80px;
 
 z-index:9999;
 
-background:transparent;
+background:#e9e9e9;
+
+border-bottom: 1px solid #ccc;
 }
 
 /* Fordel venstre og højre efter skærmens bredde */

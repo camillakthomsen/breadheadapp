@@ -1,8 +1,8 @@
 import "../../style/info.css";
 
-import bookclub1 from "../../photo/bakery.webp";
-import bookclub2 from "../../photo/bakery.webp";
-import bookclub3 from "../../photo/bakery.webp";
+import bookclub1 from "../../photo/bcp1.jpg";
+import bookclub2 from "../../photo/bcp2.jpg";
+import bookclub3 from "../../photo/bcp3.jpg";
 
 export default function BookclubInfo() {
   return (
@@ -10,6 +10,8 @@ export default function BookclubInfo() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
+        
         <h2 className="infoHero">BOOK CLUB</h2>
 
         <p className="infoText bookInfoText">

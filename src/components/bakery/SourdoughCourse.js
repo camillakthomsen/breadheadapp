@@ -1,6 +1,5 @@
 import "../../style/info.css";
 
-import heroImg from "../../photo/sk.jpg";
 import bottomImg from "../../photo/sk1.jpg";
 
 export default function SourdoughCourse() {
@@ -9,17 +8,17 @@ export default function SourdoughCourse() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
         {/* H1 (Bubble) */}
         <h1 className="infoHero">SOURDOUGH COURSE</h1>
 
         {/* Intro: tekst + billede */}
-        <div className="courseIntro">
-          <p className="courseIntroText">
+        <div className="infoContainer">
+          <p className="infoText">
             JOIN OUR SOURDOUGH COURSE IN AARHUS AND LEARN HOW TO BAKE BREAD FROM
             SCRATCH.
           </p>
 
-          <img className="courseIntroImg" src={heroImg} alt="Sourdough course" />
         </div>
 
         {/* H2 + tekst */}

@@ -1,4 +1,8 @@
 import "../../style/location.css";
+import jmReport from "../../documents/KontrolRapport JM mørks gade.pdf";
+import nyReport from "../../documents/KontrolRapport Ny Munkegade.pdf";
+
+import smiley from "../../photo/Smiley.png";
 
 export default function Location() {
   return (
@@ -15,6 +19,10 @@ export default function Location() {
           <p>Mon-fri 7:15-18</p>
           <p>Sat 8:30-18</p>
           <p>Sun 8:30-16:30</p>
+
+          <a href={jmReport} target="_blank" rel="noopener noreferrer" className="smileyLink">
+            <img src={smiley} alt="Kontrolrapport" />
+          </a>
         </div>
       </div>
 
@@ -30,6 +38,10 @@ export default function Location() {
           <p>Mon-fri 7:15-18</p>
           <p>Sat 8:30-18</p>
           <p>Sun 8:30-16:30</p>
+
+          <a href={nyReport} target="_blank" rel="noopener noreferrer" className="smileyLink">
+            <img src={smiley} alt="Kontrolrapport" />
+          </a>
         </div>
       </div>
     </div>

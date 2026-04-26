@@ -1,6 +1,4 @@
 import "../../style/info.css";
-
-import heroImg from "../../photo/bk.jpg";
 import bottomImg from "../../photo/bk1.jpg";
 
 export default function BaristaCourse() {
@@ -9,17 +7,16 @@ export default function BaristaCourse() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
         {/* H1 (Bubble) */}
         <h1 className="infoHero">BARISTA COURSE</h1>
 
         {/* Intro: tekst + billede */}
-        <div className="courseIntro">
-          <p className="courseIntroText">
+        <div className="infoContainer">
+          <p className="infoText">
             JOIN OUR BARISTA COURSE IN AARHUS AND SPEND A COZY EVENING LEARNING
             THE CRAFT BEHIND GREAT COFFEE.
           </p>
-
-          <img className="courseIntroImg" src={heroImg} alt="Barista course" />
         </div>
 
         {/* H2 + tekst */}

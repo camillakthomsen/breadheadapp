@@ -10,6 +10,7 @@ export default function FirstFloorInfo() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
         <h1 className="infoHero">1ST. FLOOR</h1>
 
         {/* Section */}

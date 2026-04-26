@@ -20,7 +20,7 @@ export default function NavBar() {
             </div>
         </div>
 
-          <NavLink to="/bakery2business">B2B</NavLink>
+          <NavLink to="/bakery2business">BAKERY2BUSINESS</NavLink>
           <NavLink to="/jobinfo">Job</NavLink>
         </nav>
 

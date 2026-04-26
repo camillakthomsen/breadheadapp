@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CookieConsent from "react-cookie-consent";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
@@ -58,6 +59,32 @@ function App() {
       </main>
 
       <Footer/>
+
+      <CookieConsent
+        location="bottom"
+        buttonText="OK"
+        declineButtonText="NEJ TAK"
+        enableDeclineButton
+        style={{
+        background: "#e9e9e9",
+        color: "#111",
+        fontFamily: "FoundersRegular"
+      }}
+        buttonStyle={{
+        background: "#111",
+        color: "#fff",
+        fontSize: "12px",
+        textTransform: "uppercase"
+      }}
+        declineButtonStyle={{
+        background: "transparent",
+        color: "#111",
+        fontSize: "12px",
+        textTransform: "uppercase"
+      }}
+      >
+          Denne side bruger cookies til statistik.
+      </CookieConsent>
     </BrowserRouter>
   );
 }

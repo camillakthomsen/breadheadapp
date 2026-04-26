@@ -40,6 +40,72 @@
   text-transform: uppercase;
 }
 
+/* GRID */
+.eventsGrid {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1000px) {
+  .eventsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 650px) {
+  .eventsGrid { grid-template-columns: 1fr; }
+}
+
+/* CARD */
+.eventCard {
+  position: relative;
+  width: 100%;
+  height: 300px; /* 👈 ens størrelse */
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+
+/* IMAGE */
+.eventCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 👈 vigtig */
+  transition: transform 0.4s ease;
+}
+
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  padding: 16px;
+
+  font-family: "FoundersSemibold", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  text-transform: uppercase;
+
+  color: white;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0)
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* SHOW TEXT ON HOVER */
+.eventCard:hover .overlay {
+  opacity: 1;
+}
+
 .eventsIntro {
   font-family: "FoundersSemibold", sans-serif;
   font-weight: 400;
@@ -50,14 +116,6 @@
   line-height: 1.3;
 }
 
-/* instagram grid */
-.eventsGrid {
-  max-width: 900px;
-  margin: 0 auto 60px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
 
 @media (max-width: 1000px) {
   .eventsGrid { grid-template-columns: repeat(2, 1fr); }
@@ -66,100 +124,17 @@
   .eventsGrid { grid-template-columns: 1fr; }
 }
 
-/* wrapper */
-.eventTileWrap {
-  display: grid;
-  gap: 10px;
-  justify-items: center;
-}
-
-/* the square tile */
-.eventTile {
-  --accent: #111;
-  --bg: #ddd;
-
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background: var(--bg);
-  color: var(--accent);
-
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding: 14px;
-  box-sizing: border-box;
-
-  font-family: "FoundersSemibold", sans-serif;
-  font-weight: 400;
-}
-
-.eventTileTopSingle{
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
-  font-weight: 400;
-}
 
 .eventTileCenter {
   display: grid;
   place-items: center;
 }
 
-.eventTileHero{
-  font-family: var(--heroFont, "ABCStefan-BubbleTight"), sans-serif;
-  font-size: 46px;
-  line-height: 1.3;
-  text-transform: uppercase;
-  text-align: center;
-
-  color: var(--accent);       /* fyldt tekst */
-  -webkit-text-stroke: 0;     /* ingen outline */
-  font-weight: 400;
-}
-
-.eventTileBottom {
-  display: grid;
-  place-items: center;
-}
-
-.eventTileWhen{
-  font-family: "FoundersGroteskCondensedSemibold", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 18px;
-  line-height: 1.3;
-}
 
 .eventsIntro {
   margin: 0 auto 55px;
 }
 
-/* meta under tile */
-.eventTileMeta {
-  width: 100%;
-  text-transform: uppercase;
-  font-family: "FoundersSemibold", sans-serif;
-  font-weight: 400;
-}
-
-
-.eventTileLink {
-  display: inline-block;
-  margin-top: 10px;
-
-  font-family: "FoundersSemibold", sans-serif;
-  font-weight: 400;
-  font-size:clamp(0.90rem,1.15vw,1.2rem);
-
-  color: #111;
-  text-decoration: none;
-}
-
-.eventTileLink:hover {
-  text-decoration: underline;
-}
 
 /* bottom text */
 .eventsSectionTitle {

@@ -9,6 +9,7 @@ export default function RunningInfo() {
       <div className="infoContainer">
         <br />
         <br />
+        <br />
 
         <h2 className="runningInfoH2">(BHRC)</h2>
 

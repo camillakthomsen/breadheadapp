@@ -4,7 +4,10 @@ export default function JobsInfo() {
   return (
     <div className="infoPage">
       <div className="infoContainer">
-        {/* Overskrift i bubble-font (som på billedet) */}
+        <br />
+        <br />
+        <br />
+        
         <h2 className="infoHero">JOIN BREADHEAD</h2>
 
         <h2 className="infoSectionTitle">PRAKTIKANT TIL EFTERÅR 2026</h2>
@@ -39,7 +42,7 @@ export default function JobsInfo() {
           • HAR ERFARING MED – ELLER STOR INTERESSE FOR – SOCIALE MEDIER OG
           CONTENT CREATION
           <br />• ARBEJDER MED INSTAGRAM OG TIKTOK
-          <br />• FØLGER MED I TRENDS OG I VEJ, HVAD DER RØRER SIG
+          <br />• FØLGER MED I TRENDS OG VED, HVAD DER RØRER SIG
           <br />• ER PROAKTIV OG TAGER INITIATIV
           <br />• ER HANDLEKRAFTIG OG FÅR TING EKSEKVERET
           <br />• HAR EN GOD ÆSTETISK SANS

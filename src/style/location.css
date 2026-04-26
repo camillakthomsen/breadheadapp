@@ -95,6 +95,18 @@
   opacity: 0.9;
 }
 
+.smileyLink img {
+  width: 28px;
+  height: 28px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.smileyLink img:hover {
+  transform: scale(1.1);
+}
+
 /* ===== SÆT DINE BILLEDER HER ===== */
 /* CSS-filen ligger i src/style, og billederne i src/photo => ../photo/... */
 .leftBase  { background-image: url("../photo/jmorksgade.JPG"); }
