@@ -12,6 +12,7 @@ import SourdoughCourse from "./components/bakery/SourdoughCourse";
 import BaristaCourse from "./components/bakery/BaristaCourse";
 import Location from "./components/bakery/Location";
 import Events from "./components/bakery/Events";
+import Bakery2Business from "./components/bakery/bakery2business";
 
 import HomeBookclub from "./components/bookclub/bookclubhome";
 import BookclubInfo from "./components/bookclub/bookclubinfo";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/barista-course" element={<BaristaCourse />} />
           <Route path="/location" element={<Location />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/bakery2business" element={<Bakery2Business />} />
 
           <Route path="/homebookclub" element={<HomeBookclub/>} />
           <Route path="/bookclubinfo" element={<BookclubInfo/>} />

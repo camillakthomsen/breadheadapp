@@ -41,7 +41,7 @@ export default function Events() {
     <h1 className="infoHero">EVENTS</h1>
 
     {/* TEXT BEFORE GRID */}
-    <h2 className="infoSectionTitle">
+    <h2 className="infoTextBold">
       BREADHEAD IS MORE THAN BREAD AND COFFEE – IT’S ABOUT THE PEOPLE WHO SHOW UP
       AROUND IT.
     </h2>
