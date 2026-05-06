@@ -25,17 +25,30 @@ export default function HamburgerMenu() {
 
         <ul id="menu">
           <li>
-            <Link to="/homebakery" onClick={closeMenu}>Bakery</Link>
+    <Link to="/homebakery" onClick={closeMenu}>Bakery</Link>
+  </li>
+
+  <li>
+    <Link to="/events" onClick={closeMenu}>Events</Link>
+  </li>
+
+  {/* COMMUNITY */}
+  <li className="mobileCommunity">
+    <span>Community</span>
+
+    <div className="mobileDropdown">
+      <Link to="/homerunning" onClick={closeMenu}>Running</Link>
+      <Link to="/bookclubinfo" onClick={closeMenu}>Book Club</Link>
+      <Link to="/firstfloorinfo" onClick={closeMenu}>1st Floor</Link>
+        </div>
           </li>
+
           <li>
-            <Link to="/bookclubinfo" onClick={closeMenu}>Bookclub</Link>
+              <Link to="/bakery2business" onClick={closeMenu}>
+              Bakery2Business
+              </Link>
           </li>
-          <li>
-            <Link to="/firstfloorinfo" onClick={closeMenu}>1st. floor</Link>
-          </li>
-          <li>
-            <Link to="/homerunning" onClick={closeMenu}>Running</Link>
-          </li>
+
           <li>
             <Link to="/jobhome" onClick={closeMenu}>Jobs</Link>
           </li>
