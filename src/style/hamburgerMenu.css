@@ -1,9 +1,9 @@
 /*
   Based on "Pure CSS Hamburger Menu" by Erik Terwan (MIT License)
-  Adjusted for React + full-screen mobile menu + custom font only in menu
+  Cleaned + mobile fullscreen + community hierarchy
 */
 
-/* Font bruges KUN i menuen */
+/* Font bruges i menu */
 @font-face {
   font-family: "ABCStefanSimple";
   src: url("../fonts/ABCStefan-Simple.otf") format("opentype");
@@ -20,10 +20,10 @@
   user-select: none;
 }
 
-/* Invisible checkbox (controls :checked) */
+/* Invisible checkbox */
 #menuToggle input {
   display: block;
-  width: 56px;   /* større klik-område */
+  width: 56px;
   height: 46px;
   position: absolute;
   top: -10px;
@@ -33,15 +33,15 @@
   z-index: 1002;
 }
 
-/* The 3 hamburger lines */
+/* Burger lines */
 #menuToggle span {
   display: block;
-  width: 44px;      /* større */
-  height: 6px;      /* tykkere */
+  width: 44px;
+  height: 6px;
   margin-bottom: 8px;
   position: relative;
 
-  background: #111; /* så den kan ses */
+  background: #111;
   border-radius: 4px;
 
   z-index: 1001;
@@ -58,52 +58,48 @@
   transform-origin: 0% 100%;
 }
 
-/* Hover: burger skifter farve */
+/* Hover */
 #menuToggle:hover span {
   background: #555;
 }
 
-/* Animate into X */
+/* Animate to X */
 #menuToggle input:checked ~ span {
   transform: rotate(45deg) translate(2px, -1px);
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  transform: scale(0.2);
 }
 
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* Menu panel (desktop/tablet default) */
+/* MENU (default hidden) */
 #menu {
   position: absolute;
   width: 260px;
   margin: -110px 0 0 -55px;
-  padding: 60px 45px 44px;
-  padding-top: 130px;
-  padding-left: 44px;
+  padding: 130px 45px 44px 44px;
 
   list-style: none;
 
   background: transparent;
-  box-shadow: none;
 
-  transform-origin: 0% 0%;
   transform: translate(-110%, 0);
   transition: transform 0.5s ease;
 
-  /* Font KUN her */
   font-family: "ABCStefanSimple", sans-serif;
 }
 
+/* items */
 #menu li {
   padding: 12px 0;
 }
 
-/* Links + hover */
+/* links */
 #menu a {
   text-decoration: none;
   color: #111;
@@ -116,28 +112,27 @@
   color: #555;
 }
 
-/* Slide in when checked */
+/* open menu */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
 
-/* Social icons row (under menu links) */
+/* socials */
 #menu .menuSocials {
   margin-top: 24px;
   display: flex;
   gap: 16px;
-  align-items: center;
 }
 
 #menu .menuSocials img {
   width: 28px;
   height: 28px;
-  object-fit: contain;
-  display: block;
 }
 
+/* ========================= */
+/* 📱 MOBILE FULLSCREEN MENU */
+/* ========================= */
 
-/* ===== MOBILE FULLSCREEN MENU ===== */
 @media (max-width: 768px) {
 
   /* skjul logo */
@@ -145,13 +140,13 @@
     display: none;
   }
 
-  /* burger placering */
+  /* burger */
   #menuToggle {
     top: 25px;
     left: 20px;
   }
 
-  /* FULLSCREEN MENU */
+  /* fullscreen */
   #menu {
     position: fixed;
     top: 0;
@@ -163,7 +158,7 @@
     margin: 0;
     padding: 120px 30px 40px;
 
-    background: #e9e9e9; /* 👈 vigtig */
+    background: #e9e9e9;
 
     transform: translateX(-100%);
     transition: transform 0.4s ease;
@@ -173,7 +168,7 @@
     align-items: flex-start;
   }
 
-  /* når menu er åben */
+  /* åbning */
   #menuToggle input:checked ~ ul {
     transform: translateX(0);
   }
@@ -183,24 +178,31 @@
     padding: 18px 0;
   }
 
-  /* links */
-  #menu a {
+  /* MAIN LINKS */
+  #menu a,
+  .mobileCommunity > span {
     font-size: 28px;
     color: #111;
+    display: block;
   }
 
-  /* dropdown i mobil */
+  /* COMMUNITY DROPDOWN */
   .mobileDropdown {
-    margin-top: 10px;
-    padding-left: 10px;
+    margin-top: 8px;
+    padding-left: 16px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .mobileDropdown a {
-    font-size: 20px;
+    font-size: 18px; /* 👈 mindre */
     opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+
+  .mobileDropdown a:hover {
+    opacity: 1;
   }
 
   /* socials */
