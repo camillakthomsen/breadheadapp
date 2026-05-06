@@ -6,7 +6,7 @@
 
 .homeTitle {
   font-family: "FoundersGroteskCondensedSemibold", sans-serif;
-  font-size: 96px; /* ændr hvis du vil */
+  font-size: 96px;
   margin: 0;
 }
 
@@ -54,4 +54,14 @@
   opacity: 1;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .homeTitle {
+    font-size: 56px;
+  }
+
+  .homeSubtitle {
+    font-size: 28px;
+  }
 }
