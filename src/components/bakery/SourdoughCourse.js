@@ -94,7 +94,7 @@ export default function SourdoughCourse() {
               PLEASE BRING AN APRON
               <br />
               <br />
-              DATE: APRIL 27
+              DATE: SEPTEMBER 28
               <br />
               SIGN-UP: BREADHEAD@BREADHEADBAKERY.DK
             </p>

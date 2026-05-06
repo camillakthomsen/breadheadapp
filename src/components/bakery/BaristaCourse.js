@@ -70,7 +70,7 @@ export default function BaristaCourse() {
               TIME: 7:00 PM
               <br />
               <br />
-              DATE: APRIL 21
+              DATE: MAY 19
               <br />
               SIGN-UP: CN@BREADHEADBAKERY.DK
             </p>

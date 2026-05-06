@@ -10,14 +10,6 @@ import baristaImg from "../../photo/baristakursus eventside.png";
 export default function Events() {
   const events = [
     {
-    image: runImg,
-    to: "/runninginfo",
-    },
-    {
-    image: runImg2,
-    to: "/runninginfo",
-    },
-    {
     image: pilatesImg,
     to: "/",
     },
@@ -28,6 +20,14 @@ export default function Events() {
     {
     image: sourdoughImg,
     to: "/sourdough-course",
+    },
+    {
+    image: runImg,
+    to: "/runninginfo",
+    },
+    {
+    image: runImg2,
+    to: "/runninginfo",
     },
   ];
 
