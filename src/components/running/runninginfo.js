@@ -1,7 +1,7 @@
 import "../../style/info.css";
 
-import posterTuesday from "../../photo/tirsdag.png";
-import posterThursday from "../../photo/torsdag.png";
+import posterTuesday from "../../photo/runningc1.jpg";
+import posterThursday from "../../photo/runningc2.jpg";
 
 export default function RunningInfo() {
   return (
@@ -39,7 +39,7 @@ export default function RunningInfo() {
         <p className="infoText infoContactText">
           STAY IN TOUCH WITH BHRC THROUGH OUR{" "}
           <a className="infoLink" href="https://www.instagram.com/breadheadrunningclub/">
-            SOCIAL MEDIA PROFILE
+            INSTAGRAM
           </a>
           .
         </p>
