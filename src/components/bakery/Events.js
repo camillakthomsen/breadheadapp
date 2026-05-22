@@ -6,6 +6,7 @@ import runImg2 from "../../photo/Løbeklub eventside-1.png";
 import pilatesImg from "../../photo/pilates eventside.png";
 import sourdoughImg from "../../photo/surdejskursus eventside.png";
 import baristaImg from "../../photo/baristakursus eventside.png";
+import cofferaveImg from "../../photo/CoffeeRave.png";
 
 export default function Events() {
   const events = [
@@ -16,6 +17,10 @@ export default function Events() {
     { 
     image: baristaImg,
     to: "/barista-course",
+    },
+    {
+    image: cofferaveImg,
+    to: "/coffee-rave",
     },
     {
     image: sourdoughImg,

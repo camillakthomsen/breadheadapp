@@ -9,7 +9,7 @@ export default function Bakery2Business() {
         <br />
 
         {/* H1 */}
-        <h1 className="infoHero">BAKERY 2 BUSINESS</h1>
+        <h1 className="infoHero">BAKERY2BUSINESS</h1>
 
         {/* Intro */}
         <p className="b2bIntro">
@@ -17,7 +17,23 @@ export default function Bakery2Business() {
         </p>
 
         <p className="b2bIntro">
-          DO YOU WANT TO SERVE OUR GOODS OR ORDER FOR MEETINGS, OFFICES, AND EVENTS?
+          WANT TO GIVE YOUR TEAM A BETTER START TO THE DAY?
+        </p>
+
+        <p className="b2bIntro">
+          BREADHEAD BAKERY BRINGS BREAKFAST AND COFFEE DIRECTLY TO YOUR WORKPLACE.
+        </p>
+
+        <p className="b2bIntro">
+          FRESHLY BAKED SOURDOUGH BUNS WITH CHEESE, PASTRIES AND FRESHLY BREWED COFFEE - SERVED STRAIGHT FROM OUR BAKING UNIT TO YOUR MORNING TABLE.
+        </p>
+
+        <p className="b2bIntro">
+          FOR MORNING MEETINGS, FRIDAY BREAKFASTS, EVENTS OR SIMPLY A BETTER START TO THE WORKDAY.
+        </p>
+
+        <p className="b2bIntro">
+          WE TAILOR EACH SETUP TO YOUR WISHES, YOUR TEAM AND THE KIND OF MORNING YOU WANT TO CREATE.
         </p>
 
         <p className="b2bIntro">
@@ -37,7 +53,6 @@ export default function Bakery2Business() {
             <p>FREDERIKSHØJ</p>
             <p>BARISTA</p>
             <p>KOPKAFÉ</p>
-            <p>STUEN TV</p>
           </div>
         </div>
 
