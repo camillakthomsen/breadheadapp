@@ -11,14 +11,6 @@ import cofferaveImg from "../../photo/CoffeeRave.png";
 export default function Events() {
   const events = [
     {
-    image: pilatesImg,
-    to: "/",
-    },
-    { 
-    image: baristaImg,
-    to: "/barista-course",
-    },
-    {
     image: cofferaveImg,
     to: "/coffee-rave",
     },
