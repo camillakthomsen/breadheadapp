@@ -47,8 +47,8 @@ export default function Bakery2Business() {
 
           <div className="b2bPlaces">
             <p>ACT</p>
-            <p>MANAA EATERY</p>
-            <p>RAS28</p>
+            <p>MANDA EATERY</p>
+            <p>RS28</p>
             <p>CAPO</p>
             <p>FREDERIKSHØJ</p>
             <p>BARISTA</p>
