@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import runImg from "../../photo/Løbeklub eventside.png";
 import runImg2 from "../../photo/Løbeklub eventside-1.png";
 import sourdoughImg from "../../photo/surdejskursus eventside.png";
-import cofferaveImg from "../../photo/CoffeeRave.png";
 
 export default function Events() {
   const events = [
